@@ -7,7 +7,9 @@ export default Ember.Component.extend({
         answerText: this.get('answer'),
         author: this.get('username'),
         question: this.get('question')
-      }
+      };
+      this.set('username', '');
+      this.set('answer', '');
       this.sendAction("save", params);
     }
   }

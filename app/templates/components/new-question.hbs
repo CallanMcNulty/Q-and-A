@@ -1,9 +1,11 @@
 <h3>Ask a question:</h3>
 <form>
   <label for="username">Username:</label>
+  <br>
   {{input value=username id="username"}}
   <br>
   <label for="question">Question:</label>
+  <br>
   {{input value=question id="question"}}
   <br>
   <label for="details">Additional Details:</label>
@@ -12,3 +14,4 @@
   <br>
   <button {{action "save"}}>Submit</button>
 </form>
+<hr>
