@@ -1,0 +1,11 @@
+<h4>Answer this question:</h4>
+<form>
+  <label for="username">Username:</label>
+  {{input value=username id="username"}}
+  <br>
+  <label for="answer">Answer:</label>
+  <br>
+  {{textarea value=answer id="answer"}}
+  <br>
+  <button {{action "save"}}>Submit</button>
+</form>
