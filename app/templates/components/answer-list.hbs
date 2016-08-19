@@ -1,5 +1,6 @@
 {{#each question.answers as |answer|}}
   <h3>{{answer.author}} says:</h3>
   <p>{{answer.answerText}}</p>
+  {{edit-answer answer=answer}}
   <hr>
 {{/each}}

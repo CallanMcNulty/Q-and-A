@@ -1,0 +1,13 @@
+{{#if editing}}
+<hr>
+<h4>Edit</h4>
+<form>
+  <label for="answer">Answer:</label>
+  <br>
+  {{textarea value=answer.answerText id="edit-answer"}}
+  <br>
+  <button {{action "update" answer}}>Save</button>
+</form>
+{{else}}
+  <button {{action "beginEdit"}}>Edit</button>
+{{/if}}
