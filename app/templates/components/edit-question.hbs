@@ -1,0 +1,16 @@
+{{#if editing}}
+<hr>
+<h4>Edit</h4>
+<form>
+  <label for="question">Question:</label>
+  {{input value=question.questionText id="question"}}
+  <br>
+  <label for="details">Additional Details:</label>
+  <br>
+  {{textarea value=question.details id="details"}}
+  <br>
+  <button {{action "update" question}}>Save</button>
+</form>
+{{else}}
+  <button {{action "beginEdit"}}>Edit</button>
+{{/if}}
