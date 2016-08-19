@@ -9,6 +9,9 @@ export default Ember.Component.extend({
     update(question) {
       question.save();
       this.set("editing", false);
+    },
+    destroy(question) {
+      this.sendAction('destroyQuestion', question);
     }
   }
 });

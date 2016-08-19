@@ -2,7 +2,7 @@
 <p>Asked by {{model.author}}</p>
 <hr>
 <p>{{model.details}}</p>
-{{edit-question question=model}}
+{{edit-question question=model destroyQuestion="destroyQuestion"}}
 <hr>
 {{new-answer question=model save="save"}}
 <hr>

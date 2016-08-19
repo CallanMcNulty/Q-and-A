@@ -10,6 +10,7 @@
   {{textarea value=question.details id="details"}}
   <br>
   <button {{action "update" question}}>Save</button>
+  <button {{action "destroy" question}}>Delete</button>
 </form>
 {{else}}
   <button {{action "beginEdit"}}>Edit</button>

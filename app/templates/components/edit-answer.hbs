@@ -7,6 +7,7 @@
   {{textarea value=answer.answerText id="edit-answer"}}
   <br>
   <button {{action "update" answer}}>Save</button>
+  <button {{action "destroy" answer}}>Delete</button>
 </form>
 {{else}}
   <button {{action "beginEdit"}}>Edit</button>
