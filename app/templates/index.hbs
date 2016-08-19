@@ -1,6 +1,6 @@
 <ul>
   {{#each model as |question|}}
-    <li>{{question.author}} asks "{{question.questionText}}"</li>
+    <li>{{#link-to "question" question.id}}{{question.author}} asks "{{question.questionText}}"{{/link-to}}</li>
   {{/each}}
 </ul>
 {{new-question save="save"}}
