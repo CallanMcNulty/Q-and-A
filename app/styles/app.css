@@ -2,6 +2,16 @@ textarea {
   width: 400px;
   height: 100px;
 }
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  text-align: center;
+}
 input {
   width: 200px;
   margin-bottom: 10px;
@@ -11,4 +21,12 @@ input {
 }
 #question {
   width: 400px;
+}
+.voting {
+  text-align: center;
+  float: right;
+  margin: 10px;
+}
+.voting p {
+  margin: 5px;
 }

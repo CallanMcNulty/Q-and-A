@@ -1,7 +1,9 @@
 {{#each sortedAnswers as |answer|}}
-  <button {{action "vote" 1 answer}}>/\</button>
-  <p>{{answer.votes}}</p>
-  <button {{action "vote" -1 answer}}>\/</button>
+  <div class="voting">
+    <button {{action "vote" 1 answer}}>&#8679;</button>
+    <p>{{answer.votes}}</p>
+    <button {{action "vote" -1 answer}}>&#8681;</button>
+  </div>
   <p>{{time answer.timestamp}}</p>
   <h3>{{answer.author}} says:</h3>
   <p>{{answer.answerText}}</p>

@@ -1,7 +1,7 @@
 <h3>Questions:</h3>
 <ul>
   {{#each questions as |question|}}
-    <li>{{question.author}} asks: {{#link-to "question" question.id}}"{{question.questionText}}" ({{number-of-answers question}} answers){{/link-to}}</li>
+    <li><strong>{{question.author}}</strong> asks: {{#link-to "question" question.id}}"{{question.questionText}}" ({{number-of-answers question}} answers){{/link-to}}</li>
   {{/each}}
 </ul>
 <hr>
