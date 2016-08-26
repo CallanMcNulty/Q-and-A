@@ -7,6 +7,10 @@ export default Ember.Component.extend({
       this.set('editing', true);
     },
     update(question) {
+      var chosenCategory = this.get('category');
+      if(chosenCategory!==undefined) {
+        question.set('category', chosenCategory);
+      }
       question.save();
       this.set("editing", false);
     },

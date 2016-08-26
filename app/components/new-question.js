@@ -7,6 +7,7 @@ export default Ember.Component.extend({
         questionText: this.get('question'),
         details: this.get('details'),
         author: this.get('username'),
+        category: this.get('category'),
         timestamp: Date.now()
       };
       this.set('question', '');

@@ -6,6 +6,23 @@
   <br>
   {{input value=question.questionText id="question"}}
   <br>
+  <label>Category:</label>
+  <br>
+  <br>
+  <div class="category-choice">
+    <label>Arts &amp; Media</label>
+    {{radio-button value="Arts & Media" checked=category}}
+    <label>Health</label>
+    {{radio-button value="Health" checked=category}}
+    <label>Science &amp; Mathematics</label>
+    {{radio-button value="Science & Mathematics" checked=category}}
+    <br>
+    <label>Politics</label>
+    {{radio-button value="Politics" checked=category}}
+    <label>Spirituality &amp; Religion</label>
+    {{radio-button value="Spirituality & Religion" checked=category}}
+  </div>
+  <br>
   <label for="details">Additional Details:</label>
   <br>
   {{textarea value=question.details id="details"}}

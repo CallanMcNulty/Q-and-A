@@ -6,6 +6,9 @@ input {
   width: 200px;
   margin-bottom: 10px;
 }
+.category-choice input {
+  width: 30px;
+}
 #question {
   width: 400px;
 }
