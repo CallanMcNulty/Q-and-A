@@ -1,0 +1,6 @@
+<h3>Favorites:</h3>
+<ul>
+  {{#each favorites.contents as |fav|}}
+    <li>{{#link-to "question" fav.id}}{{fav.questionText}}{{/link-to}} <button {{action "remove" fav}}>Remove</button></li>
+  {{/each}}
+</ul>
