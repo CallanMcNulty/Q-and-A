@@ -1,5 +1,5 @@
 <h2>{{model.questionText}} <button {{action "addToFavs" model}}>Add to Favorites</button></h2>
-<p>Asked by {{model.author}}</p>
+<p>Asked by <strong>{{model.author}}</strong> on {{time model.timestamp}}</p>
 <hr>
 <p>{{model.details}}</p>
 {{edit-question question=model destroyQuestion="destroyQuestion"}}

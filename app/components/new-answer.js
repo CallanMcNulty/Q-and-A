@@ -7,7 +7,8 @@ export default Ember.Component.extend({
         answerText: this.get('answer'),
         author: this.get('username'),
         question: this.get('question'),
-        votes: 0
+        votes: 0,
+        timestamp: Date.now()
       };
       this.set('username', '');
       this.set('answer', '');
