@@ -1,8 +1,11 @@
-<h3>Questions:</h3>
+{{question-list questions=model}}
+<h3>Categories:</h3>
 <ul>
-  {{#each model as |question|}}
-    <li>{{question.author}} asks: {{#link-to "question" question.id}}"{{question.questionText}}" ({{number-of-answers question}} answers){{/link-to}}</li>
-  {{/each}}
+  <li>{{#link-to "category" "Arts&Media"}}Arts &amp; Media{{/link-to}}</li>
+  <li>{{#link-to "category" "Health"}}Health{{/link-to}}</li>
+  <li>{{#link-to "category" "Science&Mathematics"}}Science &amp; Mathematics{{/link-to}}</li>
+  <li>{{#link-to "category" "Politics"}}Politics{{/link-to}}</li>
+  <li>{{#link-to "category" "Spirituality&Religion"}}Spirituality &amp; Religion{{/link-to}}</li>
 </ul>
 <hr>
 {{new-question save="save"}}
