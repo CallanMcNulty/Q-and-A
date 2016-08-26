@@ -2,7 +2,7 @@
 
 #### By Callan McNulty
 
-This web app will allow users to post their questions and post answers to other users questions. Functionality for updating and deleting questions is also present.
+This web app will allow users to post their questions and post answers to other users questions. When answers are posted, users may vote answers either up or down, with the most upvoted answers displaying first. Users may also browse questions by category, and save questions they want to revisit to a list of favorites for easier access. Functionality for updating and deleting questions is also present.
 
 ## Prerequisites
 
