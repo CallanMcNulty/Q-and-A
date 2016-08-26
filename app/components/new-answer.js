@@ -6,7 +6,8 @@ export default Ember.Component.extend({
       var params = {
         answerText: this.get('answer'),
         author: this.get('username'),
-        question: this.get('question')
+        question: this.get('question'),
+        votes: 0
       };
       this.set('username', '');
       this.set('answer', '');

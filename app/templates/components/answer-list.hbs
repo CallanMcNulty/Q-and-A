@@ -1,4 +1,7 @@
 {{#each question.answers as |answer|}}
+  <button {{action "upvote" answer}}>/\</button>
+  <p>{{answer.votes}}</p>
+  <button {{action "downvote" answer}}>\/</button>
   <h3>{{answer.author}} says:</h3>
   <p>{{answer.answerText}}</p>
   {{edit-answer answer=answer}}
